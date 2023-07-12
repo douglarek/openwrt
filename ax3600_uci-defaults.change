@@ -1,0 +1,10 @@
+uci -q batch << EOF
+set wireless.radio0.disabled='1'
+set wireless.radio0.country='US'
+set wireless.radio1.mu_beamformer='1'
+set wireless.radio1.country='US'
+set wireless.radio2.channel='auto'
+set wireless.radio2.mu_beamformer='1'
+set wireless.radio2.country='US'
+commit wireless
+EOF
